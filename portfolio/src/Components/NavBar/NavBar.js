@@ -1,57 +1,33 @@
-import React, {useState,useEffect} from 'react';
-import {CSSTransition} from 'react-transition-group';
-import Button from '@material-ui/core/Button';
+import React from 'react';
+import Button from "@material-ui/core/Button"
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem"
 import MenuIcon from '@material-ui/icons/Menu';
+import Fab from '@material-ui/core/Fab';
 import './NavBar.css';
 
-const NavBar = () => {
-    const[navvisible,setNavvisible] = useState(false);
-    const[smallscreen,setSmallscreen] = useState(false);
-    
-    useEffect(() =>{
-        const mediaQuery = window.matchMedia("(mac-width: 700)");
-        mediaQuery.addListener(handleMediaQueryChange);
-        handleMediaQueryChange(mediaQuery);
-        return()=>{
-            mediaQuery.removeListener(handleMediaQueryChange);
+export default function NavBar() {
+        const [anchorEl, setAnchorEl] = React.useState(null);
+      
+        const handleClick = (event) => {
+          setAnchorEl(event.currentTarget);
         };
-        },[]);
-    
-
-    const handleMediaQueryChange = mediaQuery =>{
-        if(mediaQuery.matches){
-            setSmallscreen(true);
-        }
-        else{
-            setSmallscreen(false);
-        }
-    };
-    const toggleNav = () =>{
-        setNavvisible(!navvisible)
-    };
-    return (
-        <div>
-        <div className="Header">
-            <img src={require} className="Logo" alt="logo" />
-            <CSSTransition
-             in={smallscreen || navvisible}
-             timeout={350}
-             className="NavAnimation"
-             unmountOnExit>
-        <nav className="Nav">
-          <a href="/">Home</a>
-          <a href="/">Articles</a>
-          <a href="/">About</a>
-        </nav>
-             </CSSTransition>
-             <div onClick={toggleNav} className="Menu">
-            <span></span>
-            <i className="big bars icon"></i>
-
-             </div>
-        </div>
-        </div>
-    )
+      
+        const handleClose = () => {
+          setAnchorEl(null);
+        };
+	return (
+		<div className="NavBar">
+			<Fab aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+                <MenuIcon/>
+			</Fab>
+			<Menu id="simple-menu" anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
+				<MenuItem >Profile</MenuItem>
+				<MenuItem >My account</MenuItem>
+				<MenuItem>Logout</MenuItem>
+			</Menu>
+		</div>
+	);
 };
 
-export default NavBar;
+
