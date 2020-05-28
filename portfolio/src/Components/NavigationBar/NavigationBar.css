@@ -1,0 +1,13 @@
+.navbar{
+    background: #232526;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  
+}
+.Menu{
+    position: absolute;
+	right: 20px;
+	top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+

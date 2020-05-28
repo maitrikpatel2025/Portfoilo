@@ -1,12 +1,19 @@
 import React from 'react';
-import MenuButton from './Components/MenuButton/MenuButton';
-import TopNav from './Components/TopNav/TopNav';
 
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import NavigationBar from './Components/NavigationBar/NavigationBar';
+import NavElement from './Components/NavElement/NavElement';
 
 function App() {
 	return (
 		<div className="App">
-			<TopNav/>
+			<Router>
+				<Switch>
+					<Route />
+				</Switch>
+				<NavigationBar/>,
+				
+			</Router>
 		</div>
 	);
 }
