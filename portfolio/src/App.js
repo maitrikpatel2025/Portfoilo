@@ -1,18 +1,19 @@
 import React from 'react';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import NavigationBar from './Components/NavigationBar/NavigationBar';
-import NavElement from './Components/NavElement/NavElement';
+import MenuButton from './Components/MenuButton/MenuButton';
+import TopNav from './Components/TopNav/TopNav';
+import Home from './Components/Home/Home';
+
 
 function App() {
 	return (
 		<div className="App">
 			<Router>
 				<Switch>
-					<Route />
+				<Route path="/" component={TopNav} />
 				</Switch>
-				<NavigationBar/>,
-				
+				<Route path="/" component={Home}/>
 			</Router>
 		</div>
 	);
