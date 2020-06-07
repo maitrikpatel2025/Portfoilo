@@ -76,13 +76,13 @@ const SideNav = ({ open }) => {
 				</NavLink>
 				<NavLink
 					exact
-					to="/porfoilo"
+					to="/porjects"
 					activeClassName="active"
 					activeStyle={{
 						borderBottom: '2px solid white'
 					}}
 				>
-					<li>Porfoilo</li>
+					<li>Projects</li>
 				</NavLink>
 				<NavLink
 					exact
