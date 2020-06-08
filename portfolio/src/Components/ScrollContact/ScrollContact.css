@@ -1,0 +1,11 @@
+.list{
+    display: flex;
+	justify-content: center;
+    flex-flow: column nowrap;
+    background-color: black;
+    
+}
+i{
+    height: 40px;
+    width: 20px;
+}

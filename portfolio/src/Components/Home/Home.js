@@ -12,7 +12,9 @@ const Home = () => {
 					<div className="row justify-content-center">
 						<div className="col-lg-6 col-md-12 sm-text-center">
 							<div className="banner-img">
-								<img src={Image1} className="img-fluid" alt="" />
+							<h1 className="B1">Design</h1>
+							<h1 className="B1">Develop</h1>
+							<h1 className="B1">inspire</h1>
 							</div>
 						</div>
 						<div className="col-lg-6 col-md-12">
@@ -22,10 +24,11 @@ const Home = () => {
 									<h1 className="H1">I'm Maitrik Patel</h1>
 								</div>
 								<p className="P">
-								   Web Developer, Software Developer, Designer and Hardware Engineer Currently based in Toronto, Ontario.
+									Web Developer, Software Developer, Designer and Hardware Engineer Currently based in
+									Toronto, Ontario.
 								</p>
 								<p className="P">
-							      I enjoy build everything from small business sites to rich interactive web apps.
+									I enjoy build everything from small business sites to rich interactive web apps.
 								</p>
 								<Link to="/projects">
 									<span className="Explore">Explore My Project</span>
@@ -33,9 +36,7 @@ const Home = () => {
 							</div>
 						</div>
 					</div>
-					<div className="Page_Number">
-					01
-					</div>
+					<div className="Page_Number"><span className="Number_0">0</span>1</div>
 				</div>
 			</div>
 		</div>
