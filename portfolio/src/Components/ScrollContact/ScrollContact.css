@@ -1,11 +1,20 @@
-.list{
+.list {
     display: flex;
-	justify-content: center;
+    position: fixed;
+    top: 200px;
+    right:0px;
     flex-flow: column nowrap;
     background-color: black;
+ }
+ .list i{
+     width:40px;
+     height: 60px
+ }
+  
+  @media only screen and (max-width: 700px) {
     
-}
-i{
-    height: 40px;
-    width: 20px;
-}
+    .list {
+        display: none;
+    }
+ 
+  }

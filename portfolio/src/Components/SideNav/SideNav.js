@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-import ImageM from '../../Image/logoImage.svg';
+
 import { NavLink } from 'react-router-dom';
 
 const Ul = styled.ul`
@@ -83,6 +83,16 @@ const SideNav = ({ open }) => {
 					}}
 				>
 					<li>Projects</li>
+				</NavLink>
+				<NavLink
+					exact
+					to="/blog"
+					activeClassName="active"
+					activeStyle={{
+						borderBottom: '2px solid white'
+					}}
+				>
+					<li>Blog</li>
 				</NavLink>
 				<NavLink
 					exact

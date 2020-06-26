@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import MenuButton from '../MenuButton/MenuButton';
-import ImageM from '../../Image/logoImage.svg';
+
 import { NavLink } from 'react-router-dom';
 
 const Nav = styled.nav`
@@ -17,8 +17,9 @@ const Nav = styled.nav`
 		padding: 15px 0;
 	}
 	.Logo_Maitrik {
-		font-family: 'Poppins', sans-serif;
-		font-size: 18px;
+		line-height: 20px;
+        font-weight: 600;
+		font-size: 20px;
 		text-transform: uppercase;
 		text-align: left;
 		color: #ffffff;

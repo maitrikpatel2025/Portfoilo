@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import MenuButton from './Components/MenuButton/MenuButton';
 import TopNav from './Components/TopNav/TopNav';
 import Home from './Components/Home/Home';
-import ScrollContact from './Components/ScrollContact/ScrollContact';
+import Scroll from './Components/Scroll/Scroll';
+
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
 				</Switch>
 				<Route path="/" component={Home}/>
 			</Router>
-			<ScrollContact/>
+			<Scroll/>
 		</div>
 	);
 }
