@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom';
 
 const Ul = styled.ul`
 	list-style: none;
+	padding-right: 100px;
 	display: flex;
 	cursor: pointer;
 	z-index: 1;
@@ -26,7 +27,7 @@ const Ul = styled.ul`
 		opacity: 0.5;
 		cursor: pointer;
 	}
-	@media (max-width: 768px) {
+	@media (max-width: 700px) {
 		flex-flow: column nowrap;
 		background-color: black;
 		opacity: 0.9;
@@ -35,7 +36,8 @@ const Ul = styled.ul`
 		top: 0;
 		right: 0;
 		width: 100%;
-		padding-top: 3.5rem;
+		padding-left: 80px;
+		padding-top: 80px;
 		transition: transform 0.3s ease-in-out;
 		li {
 			color:white;

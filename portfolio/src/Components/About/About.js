@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React  from "react";
 
 import "./About.css";
 
 const About = () => {
-    return ( <div className="About">
-    maif
-    </div> );
-}
- 
+  return (
+    
+  );
+};
+
 export default About;

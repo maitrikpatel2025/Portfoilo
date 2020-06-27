@@ -19,7 +19,9 @@ const BottomBar = () => {
                   If you are thinking about hiring me or would like to discuss a
                   project, get in touch with me at
                 </div>
-                <div className="PF2">maitrik.patel2025@gmail.com</div>
+                <div className="PF2">
+                <a className="PF2" href="mailto:someone@example.com">maitrik.patel2025@gmail.com</a>
+                </div>
                 <div className="PF2">(647) 676-7730</div>
                 <div className="contact_F">
                 <div className="contact">

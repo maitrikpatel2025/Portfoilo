@@ -8,7 +8,6 @@ const Nav = styled.nav`
 	width: 100%;
 	height: 70px;
 	background-color: black;
-	padding: 0 20px;
 	display: flex;
 	justify-content: space-between;
 	.logo {
@@ -18,11 +17,28 @@ const Nav = styled.nav`
 	}
 	.Logo_Maitrik {
 		line-height: 20px;
-        font-weight: 600;
+		font-weight: 600;
+		padding-left: 100px;
 		font-size: 20px;
 		text-transform: uppercase;
 		text-align: left;
 		color: #ffffff;
+	}
+	@media only screen and (max-width: 600px) {
+		logo {
+			position: relative;
+			top: 10px;
+			padding: 15px 0;
+		}
+		.Logo_Maitrik {
+			line-height: 20px;
+			font-weight: 600;
+			font-size: 20px;
+			padding-left: 0px;
+			text-transform: uppercase;
+			text-align: left;
+			color: #ffffff;
+		}
 	}
 `;
 

@@ -6,23 +6,26 @@ import Home from "./Components/Home/Home";
 import Scroll from "./Components/Scroll/Scroll";
 import About from "./Components/About/About";
 import SideNav from "./Components/SideNav/SideNav";
+import MenuButton from "./Components/MenuButton/MenuButton";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Switch>
-		  <Route path="/" component={TopNav} />
-		  <Route path="/" component={SideNav} />
-        </Switch>
-        <div className="Page">
-          <switch>
-            <Route path="/" component={Home} />
-            <Route path="/about" component={About} />
-          </switch>
+        <div>
+          <Switch>
+            <Route path="/" component={TopNav} />
+            <Route path="/" component={MenuButton} />
+          </Switch>
+          <div className="Page">
+            <switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/course" component={About} />
+            </switch>
+            <Scroll />
+          </div>
         </div>
       </Router>
-      <Scroll />
     </div>
   );
 }
