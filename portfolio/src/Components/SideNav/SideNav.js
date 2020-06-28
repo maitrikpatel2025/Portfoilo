@@ -48,6 +48,7 @@ const Ul = styled.ul`
 		li:hover {
 			opacity: 0.5;
 			cursor: pointer;
+			
 		}
 	}
 `;

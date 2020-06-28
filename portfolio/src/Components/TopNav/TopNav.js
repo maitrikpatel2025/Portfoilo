@@ -18,7 +18,7 @@ const Nav = styled.nav`
 	.Logo_Maitrik {
 		line-height: 20px;
 		font-weight: 600;
-		padding-left: 100px;
+		padding-left: 125px;
 		font-size: 20px;
 		text-transform: uppercase;
 		text-align: left;
@@ -34,7 +34,7 @@ const Nav = styled.nav`
 			line-height: 20px;
 			font-weight: 600;
 			font-size: 20px;
-			padding-left: 0px;
+			padding-left: 30px;
 			text-transform: uppercase;
 			text-align: left;
 			color: #ffffff;

@@ -15,6 +15,8 @@ const BottomBar = () => {
                   <div className="PF1">Software Engineer</div>
                   <div className="PF1">Gujarat • Ontario</div>
                 </div>
+
+                <div className="PF2">LET'S WORK TOGETHER</div>
                 <div className="PF1">
                   If you are thinking about hiring me or would like to discuss a
                   project, get in touch with me at
