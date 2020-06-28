@@ -3,7 +3,7 @@
     background-color: #f9fafe;
 }
 .Heading{
-    padding-bottom: 20px;
+    padding: 20px;
 }
 .A1{  
     margin: 0;
@@ -74,6 +74,16 @@
     text-align: left;
     padding: 3.5px 0px;
     color:black;
+}
+.Educ_group{
+    padding: 15px;
+    background-color:#edf1fe;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.75);
+}
+.Cert_group{
+    padding: 15px;
+    background-color:#edf1fe;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.75);
 }
 .A7{  
     margin: 0;
@@ -149,18 +159,14 @@
     padding: 30px ;
     background-color: #f9fafe;
 }
-.container_1{
-    padding: 30px ;
-}
-.skill_1{
-    padding: 10px;
-    background-color:#edf1fe;
-}
 .photo_image{
     
     border: 1px solid black;
 }
-
+.Books_container{
+    padding: 30px ;
+    background-color: #f9fafe;
+}
 @media (max-width: 800px) {
     .photo_image{
         display: none;

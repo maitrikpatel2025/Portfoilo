@@ -1,7 +1,9 @@
 import React from "react";
 
 import Photo from "../../Image/Photo.jpeg";
-import BottomBar from"./../BottomBar/BottomBar";
+import BottomBar from "./../BottomBar/BottomBar";
+import Skills from "../Skills/Skills";
+import BookReading from "../BookReading/BookReading";
 import { Education_details } from "./Education_details";
 import { Certification_details } from "./Certification_details";
 
@@ -58,7 +60,7 @@ const About = () => {
             </div>
             <div className="col-lg-4 col-md-12">
               <div className="photo_image">
-                <img className="img-fluid" src={Photo}></img>
+                <img className="img-fluid" src={Photo} alt="/"></img>
               </div>
               <p className="Q1">
                 “You cannot change what you are, only what you do.”
@@ -85,21 +87,15 @@ const About = () => {
                     <div className="row">
                       <div className="col">
                         <div className="Name">
-                        <a
-                        className="A7"
-                        href={Edu_detail.name_link}
-                      >
-                        {Edu_detail.name}
-                      </a>
-                      &nbsp;&nbsp; - &nbsp;&nbsp;
-                      <a
-                        className="A8"
-                        href={Edu_detail.coure_link}
-                      >
-                        {Edu_detail.course}
-                      </a>
+                          <a className="A7" href={Edu_detail.name_link} key={Edu_detail}>
+                            {Edu_detail.name}
+                          </a>
+                          &nbsp;&nbsp; - &nbsp;&nbsp;
+                          <a className="A8" href={Edu_detail.course} key={Edu_detail}>
+                            {Edu_detail.course}
+                          </a>
                           <div className="Course">
-                            <p className="A5">{Edu_detail.date}</p>
+                            <p className="A5" key={Edu_detail} >{Edu_detail.date}</p>
                           </div>
                         </div>
                         <div className="course_detail">
@@ -128,22 +124,16 @@ const About = () => {
                       <div className="col-xs-10 col-md-10">
                         <ul>
                           <li className="Name">
-                            <a
-                              className="A7"
-                              href={Cert_detail.name_link}
-                            >
+                            <a className="A7" href={Cert_detail.name_link} key={Cert_detail}>
                               {Cert_detail.name}
                             </a>
                             &nbsp;&nbsp; - &nbsp;&nbsp;
-                            <a
-                              className="A8"
-                              href={Cert_detail.institute_link}
-                            >
+                            <a className="A8" href={Cert_detail.institute_link}  key={Cert_detail}>
                               {Cert_detail.institute}
                             </a>
                           </li>
                           <div className="Course">
-                            <p className="A6">{Cert_detail.date}</p>
+                            <p className="A6"  key={Cert_detail} >{Cert_detail.date}</p>
                           </div>
                         </ul>
                       </div>
@@ -156,28 +146,18 @@ const About = () => {
         </div>
       </div>
       <div className="Skill_container">
-      <h1 className="A9">skills</h1>
-      <div className="container_1">
-            <div className="row justify-content-center">
-                <div className="col-lg-4 col-md-12">
-                    <div className="skill_1">
-                        <div className="A10">Industry Knowledge</div>
-                    </div>
-                </div>
-                <div className="col-lg-4 col-md-12">
-                    <div className="skill_1">
-                        <div className="A10">Tools & Technologies</div>
-                    </div>
-                </div>
-                <div className="col-lg-4 col-md-12">
-                   <div className="skill_1">
-                        <div className="A10">Interpersonal Skills</div>
-                    </div>
-                </div>
-            </div>
+        <h1 className="A9">skills</h1>
+        <Skills />
       </div>
-</div>
-<BottomBar/>
+      <div className="Books_container">
+        <h1 className="A9">BOOKS I'M READING</h1>
+        <p className="A10">
+          Learning is never complete. Here are some of the books
+          that have inspired me and helped me shape my thinking.
+        </p>
+        <BookReading />
+      </div>
+      <BottomBar />
     </div>
   );
 };
