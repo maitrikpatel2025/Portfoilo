@@ -22,9 +22,10 @@ function App() {
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
             </switch>
-            <Scroll />
+            
           </div>
         </div>
+        <Scroll />
       </Router>
     </div>
   );
