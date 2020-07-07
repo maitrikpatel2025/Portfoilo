@@ -1,0 +1,10 @@
+.Project{
+    background: url(../../Image//pexels-photo-509922.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Project_Container{
+    height: 600px;
+    padding: 30px;
+}
