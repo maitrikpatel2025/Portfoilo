@@ -1,5 +1,5 @@
 import React from 'react';
-import Skills from '../Skills/Skills'
+
 
 import "./Project.css";
 

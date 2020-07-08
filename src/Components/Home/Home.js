@@ -49,7 +49,7 @@ const Home = () => {
             <div className="row justify-content-center">
               <h1 className="B2">Engineer by Qualification, Designer by Choice!</h1>
               <div className="col-lg-6 col-md-12">
-                <img className="img-fluid" src={imageman} />
+                <img className="img-fluid" src={imageman} alt="/" />
               </div>
               <div className="col-lg-6 col-md-12">
                 <div className="header_text">

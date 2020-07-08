@@ -22,7 +22,7 @@ const Scroll = () =>{
   window.addEventListener('scroll', checkScrollTop)
 
   return (
-        <a className="scrollTop" onClick={scrollTop} style={{ display: showScroll ? 'flex' : 'none'}}><i className="inverted big angle up icon"></i></a>
+        <div className="scrollTop" onClick={scrollTop} style={{ display: showScroll ? 'flex' : 'none'}}><i className="inverted big angle up icon"></i></div>
   );
 }
 
