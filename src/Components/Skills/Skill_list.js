@@ -8,14 +8,50 @@ export const Skill_List= [
             'Web Design',
             'Software Development',
             'Web Development',
-            'Logo Design',
-            'Object-Oriented Programming (OOP)',
-            'User Interface Design',
-            'Web Applications',
-            'Analytical Skills',
-            'Troubleshooting',
             'Psychology',
         ]
+    },
+    {
+        Skills_title: 'Programming',
+        Skills:[
+            'C (Programming Language)',
+            'C++',
+            'c#*',
+            'Java*',
+            'Python',
+            'Dart*',
+            'HTML5',
+            'Cascading Style Sheets (CSS)',
+            'JavaScript',
+            'PHP', 
+            ]
+    },
+    {
+        Skills_title: 'Tools & Libraries',
+        Skills:[
+            'React Js',
+            'Redux',
+            'Flutter*',
+            'Asp.Net core',
+            'React Native*',
+            'Adode',
+            'Babel',
+            'REST API',
+            'Node Js',
+            'Express*',
+            'Docker',
+            'kubernetes*',
+            'AWS',
+            'Git'
+            ]
+    },
+    {
+        Skills_title: 'Database',
+        Skills:[
+            'Oracle SQL',
+            'My SQL',
+            'Mongo DB'
+            ]
     },
     {
         Skills_title: 'Interpersonal Skills',
@@ -23,36 +59,18 @@ export const Skill_List= [
             'Teamwork',
             'Problem Solving',
             'Personal Development',
-            'Positive Psychology',
-            'Active Learning',
-            'Patience',
+            'Organizational',
             'Time Management',
-            'Active Listening',
-            'Positive Discipline' 
             ]
     },
     {
-        Skills_title: 'Tools & Technologies',
+        Skills_title: 'Other',
         Skills:[
-            'React Js',
-            'Redux',
-            'Flutter*',
-            'Dart*',
-            'React Native*',
-            'Node Js',
-            'Mongo DB*',
-            'HTML5',
-            'Cascading Style Sheets (CSS)',
-            'JavaScript',
-            'PHP',
-            'Microsoft Office',
-            'C (Programming Language)',
-            'C++',
-            'Java*',
-            'Python',
-            'Linux',
-            'Flutter*',
-            'Dart*',
+            'Positive Psychology',
+            'Active Learning',
+            'Patience',
+            'Active Listening',
+            'Positive Discipline' 
             ]
     }
    
